@@ -1,4 +1,4 @@
-class Logger
+class CBLogger
   def info(log)
     print "INFO -- #{log}\n"
   end
