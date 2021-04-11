@@ -60,6 +60,7 @@ GEM
 
 PLATFORMS
   universal-darwin-18
+  universal-darwin-19
 
 DEPENDENCIES
   craft_bot!
