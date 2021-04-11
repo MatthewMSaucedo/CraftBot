@@ -11,7 +11,8 @@ class Bot
   def initialize(logger:, secrets:)
     @@tasks     = secrets["tasks"]
     @@api_creds = secrets["api_credentials"]
-    @@bot       = Discordrb::Bot.new(fetch_bot_auth_info)
+    logger.debug @@api_creds["client_secret"]
+    @@bot       = Discordrb::Bot.new(token: @@api_creds["client_secret"])
   end
 
   def fetch_bot_auth_info()
